@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "trainNo": "12345",
+    "trainName": "Express Line",
+    "from": "X",
+    "to": "Y",
+    "departureTime": "08:00",
+    "arrivalTime": "12:00",
+    "totalDuration": "4h",
+    "availability": "Available",
+    "riskFactor": "Low"
+  },
+  {
+    "id": 2,
+    "trainNo": "23456",
+    "trainName": "Fast Track",
+    "from": "X",
+    "to": "A",
+    "departureTime": "09:00",
+    "arrivalTime": "11:00",
+    "totalDuration": "2h",
+    "availability": "Full",
+    "riskFactor": "Medium",
+    "connectingTrains": [
+      {
+        "trainNo": "34567",
+        "trainName": "Connector Express",
+        "from": "A",
+        "to": "Y",
+        "departureTime": "11:10",
+        "arrivalTime": "13:00",
+        "totalDuration": "1h 50m"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "trainNo": "34567",
+    "trainName": "Connector Express",
+    "from": "B",
+    "to": "Y",
+    "departureTime": "10:00",
+    "arrivalTime": "14:00",
+    "totalDuration": "4h",
+    "availability": "Available",
+    "riskFactor": "High"
+  },
+  {
+    "id": 4,
+    "trainNo": "45678",
+    "trainName": "Night Rider",
+    "from": "X",
+    "to": "C",
+    "departureTime": "22:00",
+    "arrivalTime": "06:00",
+    "totalDuration": "8h",
+    "availability": "Available",
+    "riskFactor": "Low",
+    "connectingTrains": [
+      {
+        "trainNo": "56789",
+        "trainName": "Early Morning Express",
+        "from": "C",
+        "to": "Y",
+        "departureTime": "06:10",
+        "arrivalTime": "08:00",
+        "totalDuration": "1h 50m"
+      }
+    ]
+  }
+]
