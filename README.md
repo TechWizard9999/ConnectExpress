@@ -7,6 +7,7 @@ ConnectExpress is an intelligent railway route finder that specializes in discov
 
 ## 🎯 Problem Statement
 During peak travel seasons (like festivals), getting direct train tickets between major cities becomes challenging. While alternative routes with connections exist, current booking platforms don't show these options. ConnectExpress solves this by:
+
 1. Finding alternative routes with connections
 2. Assessing the reliability of connections using historical data
 3. Recommending routes based on connection time and delay risks
@@ -105,6 +106,8 @@ connectexpress/
 │   └── package.json
 └── README.md
 ```
+## 🔧 FlowChart
+![Flowchart](https://github.com/user-attachments/assets/c664421d-4b5a-482b-b0ce-703bd485f39f)
 
 ## 💻 Frontend Features
 - **Intuitive Search**: Easy-to-use interface for route searches
