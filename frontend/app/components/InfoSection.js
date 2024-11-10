@@ -1,4 +1,3 @@
-// app/components/InfoSection.js
 import React from 'react'
 import { FaTrain, FaExchangeAlt, FaShieldAlt } from 'react-icons/fa'
 

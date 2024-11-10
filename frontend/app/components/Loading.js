@@ -1,4 +1,3 @@
-// app/components/Loading.js
 'use client';
 
 const Loading = () => {

@@ -1,4 +1,3 @@
-// app/components/TrainCard.js
 'use client';
 
 import React from 'react';
@@ -31,7 +30,7 @@ const TrainCard = ({ train }) => {
         </div>
       </div>
       <div className={`px-4 py-2 rounded-full text-white font-semibold ${train.riskFactor === 'Low' ? 'bg-green-500' : train.riskFactor === 'Medium' ? 'bg-yellow-500' : 'bg-red-500'}`}>
-        Risk: {train.riskFactor}
+        {train.riskFactor}
       </div>
     </div>
   );

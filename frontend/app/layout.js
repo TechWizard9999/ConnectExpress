@@ -1,7 +1,7 @@
-// app/layout.js
 import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Providers from './providers';
 
 export const metadata = {
   title: 'TrainBook - Your Reliable Train Booking Partner',
@@ -12,11 +12,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow mt-16">
-          {children}
-        </main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main className="flex-grow mt-16">
+            {children}
+          </main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

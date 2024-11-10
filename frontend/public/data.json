@@ -7,7 +7,6 @@
     "to": "Y",
     "departureTime": "08:00",
     "arrivalTime": "12:00",
-    "totalDuration": "4h",
     "availability": "Available",
     "riskFactor": "Low"
   },
@@ -19,30 +18,17 @@
     "to": "A",
     "departureTime": "09:00",
     "arrivalTime": "11:00",
-    "totalDuration": "2h",
     "availability": "Full",
-    "riskFactor": "Medium",
-    "connectingTrains": [
-      {
-        "trainNo": "34567",
-        "trainName": "Connector Express",
-        "from": "A",
-        "to": "Y",
-        "departureTime": "11:10",
-        "arrivalTime": "13:00",
-        "totalDuration": "1h 50m"
-      }
-    ]
+    "riskFactor": "Medium"
   },
   {
     "id": 3,
     "trainNo": "34567",
     "trainName": "Connector Express",
-    "from": "B",
-    "to": "Y",
-    "departureTime": "10:00",
-    "arrivalTime": "14:00",
-    "totalDuration": "4h",
+    "from": "A",
+    "to": "B",
+    "departureTime": "11:10",
+    "arrivalTime": "13:00",
     "availability": "Available",
     "riskFactor": "High"
   },
@@ -54,19 +40,139 @@
     "to": "C",
     "departureTime": "22:00",
     "arrivalTime": "06:00",
-    "totalDuration": "8h",
     "availability": "Available",
-    "riskFactor": "Low",
-    "connectingTrains": [
-      {
-        "trainNo": "56789",
-        "trainName": "Early Morning Express",
-        "from": "C",
-        "to": "Y",
-        "departureTime": "06:10",
-        "arrivalTime": "08:00",
-        "totalDuration": "1h 50m"
-      }
-    ]
+    "riskFactor": "Low"
+  },
+  {
+    "id": 5,
+    "trainNo": "56789",
+    "trainName": "Early Morning Express",
+    "from": "C",
+    "to": "Y",
+    "departureTime": "06:10",
+    "arrivalTime": "08:00",
+    "availability": "Available",
+    "riskFactor": "Low"
+  },
+  {
+    "id": 6,
+    "trainNo": "67890",
+    "trainName": "Connector Express",
+    "from": "Z",
+    "to": "Y",
+    "departureTime": "14:00",
+    "arrivalTime": "18:00",
+    "availability": "Available",
+    "riskFactor": "Medium"
+  },
+  {
+    "id": 7,
+    "trainNo": "78901",
+    "trainName": "Super Saver",
+    "from": "A",
+    "to": "Y",
+    "departureTime": "12:00",
+    "arrivalTime": "16:00",
+    "availability": "Available",
+    "riskFactor": "Low"
+  },
+  {
+    "id": 8,
+    "trainNo": "89012",
+    "trainName": "Late Night Express",
+    "from": "B",
+    "to": "Y",
+    "departureTime": "23:30",
+    "arrivalTime": "05:30",
+    "availability": "Available",
+    "riskFactor": "High"
+  },
+  {
+    "id": 9,
+    "trainNo": "90123",
+    "trainName": "Morning Glory",
+    "from": "X",
+    "to": "D",
+    "departureTime": "07:00",
+    "arrivalTime": "09:00",
+    "availability": "Full",
+    "riskFactor": "Medium"
+  },
+  {
+    "id": 10,
+    "trainNo": "01234",
+    "trainName": "Evening Express",
+    "from": "D",
+    "to": "Y",
+    "departureTime": "09:15",
+    "arrivalTime": "13:15",
+    "availability": "Available",
+    "riskFactor": "Low"
+  },
+  {
+    "id": 11,
+    "trainNo": "11223",
+    "trainName": "Circular Express",
+    "from": "B",
+    "to": "A",
+    "departureTime": "14:00",
+    "arrivalTime": "16:00",
+    "availability": "Available",
+    "riskFactor": "Medium"
+  },
+  {
+    "id": 12,
+    "trainNo": "22334",
+    "trainName": "Local Connector",
+    "from": "C",
+    "to": "Z",
+    "departureTime": "08:00",
+    "arrivalTime": "10:00",
+    "availability": "Available",
+    "riskFactor": "Low"
+  },
+  {
+    "id": 13,
+    "trainNo": "33445",
+    "trainName": "Express Connector",
+    "from": "Z",
+    "to": "A",
+    "departureTime": "11:00",
+    "arrivalTime": "13:00",
+    "availability": "Available",
+    "riskFactor": "High"
+  },
+  {
+    "id": 14,
+    "trainNo": "44556",
+    "trainName": "Rapid Express",
+    "from": "A",
+    "to": "Y",
+    "departureTime": "13:30",
+    "arrivalTime": "17:30",
+    "availability": "Available",
+    "riskFactor": "Low"
+  },
+  {
+    "id": 15,
+    "trainNo": "55667",
+    "trainName": "Sunrise Express",
+    "from": "C",
+    "to": "A",
+    "departureTime": "05:00",
+    "arrivalTime": "07:00",
+    "availability": "Full",
+    "riskFactor": "Medium"
+  },
+  {
+    "id": 16,
+    "trainNo": "66778",
+    "trainName": "Late Express",
+    "from": "Y",
+    "to": "X",
+    "departureTime": "20:00",
+    "arrivalTime": "00:00",
+    "availability": "Available",
+    "riskFactor": "High"
   }
 ]

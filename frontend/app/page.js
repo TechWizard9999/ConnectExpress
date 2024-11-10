@@ -1,4 +1,3 @@
-// app/page.js
 'use client';
 
 import Head from 'next/head';
@@ -25,7 +24,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      {/* Hero Section */}
       <section className="bg-blue-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">Welcome to TrainBook</h1>
@@ -35,16 +33,11 @@ export default function Home() {
           <SearchForm onSearch={handleSearch} />
         </div>
       </section>
-      
-      {/* Train List Section */}
+
       {searchParams && <TrainList searchParams={searchParams} />}
 
-      {/* Features Section */}
       <InfoSection />
-
-
-      {/* Optional: Add a Contact Section */}
-      {/* <ContactSection /> */}
+      
     </div>
   );
 }
