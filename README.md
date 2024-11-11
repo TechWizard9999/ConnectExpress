@@ -23,15 +23,15 @@ Due to the unavailability of official IRCTC API and data, we have used simulated
 - **Weather Impact**: Factors in weather-related delays for better planning
 
 ## 🔧 Technical Stack
-- **Frontend**: React.js
-- **Backend**: Node.js, Express.js
+- **Frontend**: Next.Js
+- **Backend**: Node.Js, Express.Js
 - **Database**: MongoDB
 - **Algorithm**: Custom path-finding implementation in Javascript
 
 ## 🛠️ Setup and Installation
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.Js (v14 or higher)
 - MongoDB
 - npm or yarn
 
@@ -78,7 +78,7 @@ NEXT_APP_API_URL=http://localhost:3000
 
 4. Start the frontend application
 ```sh
-npm start
+npm run dev
 ```
 
 The application will be available at `http://localhost:3000`
@@ -99,10 +99,10 @@ connectexpress/
 │   │   └── station.js
 │   └── index.js
 ├── frontend/
-│   ├── src/
+│   ├── app/
 │   │   ├── components/
-│   │   ├── pages/
-│   │   └── App.js
+│   │   ├── layout.js
+│   │   └── page.js
 │   └── package.json
 └── README.md
 ```
@@ -137,3 +137,11 @@ Our route finding algorithm:
 
 ---
 ⭐️ Star this repo if you find it helpful!
+---
+
+## Our Team
+   - [Sridhar Suthapalli](https://github.com/illumaniti9)
+   - [Roopesh S](https://github.com/techwizard9999)
+   - [Raghava Kamuju](https://github.com/raghavakamuju)
+   - [Pavana Saketha Ram](https://github.com/pavanasaketharam)
+   - [Charan Polisetty](https://github.com/charan0313)
