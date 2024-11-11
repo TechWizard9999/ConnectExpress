@@ -140,7 +140,7 @@ Our route finding algorithm:
 ---
 
 ## Our Team
-   - [Sridhar Suthapalli](https://github.com/illumaniti9)
+   - [Sridhar Suthapalli](https://github.com/illuminati9)
    - [Roopesh S](https://github.com/techwizard9999)
    - [Raghava Kamuju](https://github.com/raghavakamuju)
    - [Pavana Saketha Ram](https://github.com/pavanasaketharam)
