@@ -38,13 +38,13 @@ Due to the unavailability of official IRCTC API and data, we have used simulated
 ### Backend Setup
 0. Fork the repository
 1. Clone the repository
-```bash
-git clone https://github.com/YourUserName/connectexpress.git
+```sh
+https://github.com/TechWizard9999/ConnectExpress
 cd connectexpress
 ```
 
 2. Install backend dependencies
-```bash
+```sh
 cd backend
 npm install
 ```
@@ -56,28 +56,28 @@ PORT=5000
 ```
 
 4. Start the backend server
-```bash
+```sh
 npm start
 ```
 
 ### Frontend Setup
 1. Open a new terminal and navigate to frontend directory
-```bash
+```sh
 cd frontend
 ```
 
 2. Install frontend dependencies
-```bash
+```sh
 npm install
 ```
 
 3. Create .env file
 ```env
-REACT_APP_API_URL=http://localhost:5000
+NEXT_APP_API_URL=http://localhost:3000
 ```
 
 4. Start the frontend application
-```bash
+```sh
 npm start
 ```
 
