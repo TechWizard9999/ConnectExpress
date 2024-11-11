@@ -26,7 +26,7 @@ Due to the unavailability of official IRCTC API and data, we have used simulated
 - **Frontend**: React.js
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Algorithm**: Custom path-finding implementation in Node.js
+- **Algorithm**: Custom path-finding implementation in Javascript
 
 ## 🛠️ Setup and Installation
 
