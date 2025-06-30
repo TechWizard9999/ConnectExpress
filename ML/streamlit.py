@@ -8,9 +8,13 @@ from langchain_core.prompts import PromptTemplate
 from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 from dotenv import load_dotenv
+
 load_dotenv()
-os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+
 llm_openai = OpenAI(temperature=0.6, openai_api_key=os.getenv("OPENAI_API_KEY"))
+
 PERSIST_DIR = "./storage"
 INDEX_FILE = os.path.join(PERSIST_DIR, "index.pkl")
 
@@ -38,21 +42,28 @@ def answer(user_query, output):
     chain = LLMChain(llm=llm_openai, prompt=prompt_template)
     response_stream = chain.run(user_query=user_query, output=output)
     return response_stream
-listing_history=[]
+
 st.title('Query Answering System')
+
 if 'listing_history' not in st.session_state:
     st.session_state['listing_history'] = []
+
 user_query = st.text_input("Enter your query here:", "")
 
 if st.button('Answer Query'):
     if user_query:
         output = query_engine.query(user_query).response
         answer_response = answer(user_query=user_query, output=output)
-        st.session_state['listing_history'].append((user_query,answer_response))
+        st.session_state['listing_history'].append((user_query, answer_response))
+        st.write("### Answer")
         st.write(answer_response)
     else:
-        st.write("Please enter a query to get an answer.")
-st.write("Previous Chats:")
-for question, answer in st.session_state['listing_history']:
-    st.write(f"Question: {question}")
-    st.write(f"Answer: {answer}")
+        st.warning("Please enter a query to get an answer.")
+
+st.write("---")
+st.write("### Previous Chats:")
+
+# Display history in reverse order (most recent first)
+for question, answer_text in reversed(st.session_state['listing_history']):
+    st.info(f"**Question:** {question}")
+    st.success(f"**Answer:** {answer_text}")
